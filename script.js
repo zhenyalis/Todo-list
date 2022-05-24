@@ -90,7 +90,7 @@ main.addEventListener("click", (event) => {
       (todo) => +todo.id === +event.target.closest(".form").dataset.todoId
     );
     item.closest(".form").remove();
-    todos.splice(selectedTodoDelete,1);
+    todos.splice(selectedTodoDelete);
     localStorage.setItem("todos", JSON.stringify(todos));
   }
 });
