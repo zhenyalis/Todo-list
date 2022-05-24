@@ -113,7 +113,6 @@ btnDelete.addEventListener("click", () => {
 });
 
 const todosFromStorage = JSON.parse(localStorage.getItem("todos"));
-
 if (todosFromStorage?.length) {
   todosFromStorage.forEach((todo) => {
     main.append(generateTodo(todo.todoText, todo.todoId, todo.isChecked));
